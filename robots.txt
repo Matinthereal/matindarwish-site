@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matindarwish.is-a.dev/sitemap.xml
