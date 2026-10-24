@@ -1,396 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ============================================================
-     SEO TAGS
-     ============================================================ -->
-<title>Matin Darwish - Mikepedia</title>
-<meta name="description" content="Matin Darwish is a British software engineer, student entrepreneur and creator from Leeds, England. Founder of the AI automation agency AutoFlow Leeds (Darwish Enterprises) and builder of CalcOS and Aether IDE; known online as @matindarw.">
-<meta name="keywords" content="Matin Darwish, matindarw, AutoFlow Leeds, Darwish Enterprises, AI automation Leeds, software engineer Leeds, CalcOS, Aether IDE, Termia, A-level student developer">
+<title>Matin Darwish – Engineering projects</title>
+<meta name="description" content="Matin Darwish, Year 13 student in Leeds. Designs and builds aircraft, electronics and small-processor software. Looking for an aerospace engineering degree apprenticeship starting September 2027.">
 <meta name="author" content="Matin Darwish">
 <meta name="google-site-verification" content="54sVWOB1Y3HvvM_TJ4_P3pKPUfeutMlsgh7q8xF1SLw" />
-<link rel="canonical" href="https://matindarwish.is-a.dev/">
-
-<!-- Social sharing preview -->
+<link rel="canonical" href="https://matinthereal.github.io/matindarwish-site/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Matin Darwish">
-<meta property="og:description" content="British software engineer and 18-year-old founder of AutoFlow Leeds. Builder of CalcOS, Aether IDE and Termia.">
-<meta property="og:image" content="https://matindarwish.is-a.dev/photo.jpg">
-<meta property="og:url" content="https://matindarwish.is-a.dev/">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Structured data: tells Google this page is about a Person named Matin Darwish. -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Matin Darwish",
-  "url": "https://matindarwish.is-a.dev",
-  "image": "https://matindarwish.is-a.dev/photo.jpg",
-  "jobTitle": "Software engineer and founder",
-  "description": "British software engineer, student entrepreneur and content creator from Leeds, England. Founder of AutoFlow Leeds.",
-  "birthPlace": "Leeds, England",
-  "nationality": "British",
-  "homeLocation": "Leeds, England",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "AutoFlow Leeds",
-    "url": "https://autoflowleeds.co.uk"
-  },
-  "sameAs": [
-    "https://www.tiktok.com/@matindarw",
-    "https://github.com/Matinthereal",
-    "https://autoflowleeds.co.uk",
-    "https://darwishenterprises.com"
-  ]
-}
-</script>
-
+<meta property="og:title" content="Matin Darwish – Engineering projects">
+<meta property="og:description" content="Year 13 student in Leeds who designs and builds aircraft, electronics and software for small processors.">
+<meta property="og:url" content="https://matinthereal.github.io/matindarwish-site/">
 <style>
-  :root{
-    --link:#3366cc;
-    --link-visited:#795cb2;
-    --border:#a2a9b1;
-    --soft:#f8f9fa;
-    --text:#202122;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:#f8f9fa;
-    color:var(--text);
-    font-family:sans-serif;
-    font-size:14px;
-    line-height:1.6;
-  }
-
-  /* ---- Top bar ---- */
-  .topbar{
-    background:#fff;
-    border-bottom:1px solid #c8ccd1;
-    display:flex;
-    align-items:center;
-    gap:16px;
-    padding:8px 16px;
-  }
-  .topbar .globe{
-    width:40px;height:40px;border-radius:50%;
-    background:#fff;border:1px solid #c8ccd1;
-    display:flex;align-items:center;justify-content:center;
-    font-family:serif;font-size:22px;color:#54595d;
-  }
-  .topbar .wordmark{font-family:'Georgia',serif;line-height:1.1;}
-  .topbar .wordmark b{font-size:18px;}
-  .topbar .wordmark span{font-size:11px;color:#54595d;}
-  .topbar .search{
-    margin-left:auto;
-    border:1px solid #a2a9b1;border-radius:2px;
-    padding:6px 10px;color:#72777d;background:#fff;
-    width:240px;max-width:40vw;font-size:13px;
-  }
-
-  /* ---- Article layout ---- */
-  .page{max-width:1000px;margin:0 auto;background:#fff;border:1px solid #eaecf0;border-top:0;}
-  .content{padding:18px 24px 40px;}
-  h1.firstHeading{
-    font-family:'Georgia','Times New Roman',serif;
-    font-weight:normal;font-size:28px;
-    border-bottom:1px solid var(--border);
-    padding-bottom:4px;margin:0 0 2px;
-  }
-  .tagline{font-size:12px;color:#54595d;margin-bottom:16px;}
-  h2{
-    font-family:'Georgia','Times New Roman',serif;
-    font-weight:normal;font-size:22px;
-    border-bottom:1px solid var(--border);
-    padding-bottom:3px;margin:24px 0 10px;
-  }
-  h3{font-size:16px;margin:18px 0 6px;}
-  p{margin:0 0 12px;}
-  a{color:var(--link);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  a:visited{color:var(--link-visited);}
-  .edit{font-size:11px;font-weight:normal;}
-  sup{font-size:11px;}
-  ul,ol{margin:0 0 12px;}
-
-  /* ---- Infobox ---- */
-  .infobox{
-    float:right;clear:right;
-    width:300px;max-width:90vw;
-    margin:0 0 16px 20px;
-    border:1px solid var(--border);
-    background:var(--soft);
-    font-size:13px;
-    line-height:1.5;
-  }
-  .infobox .ib-title{
-    text-align:center;font-weight:bold;font-size:15px;
-    padding:8px;border-bottom:1px solid var(--border);
-  }
-  .infobox .ib-photo{padding:10px;text-align:center;}
-  .infobox .ib-photo img,.infobox .ib-photo svg{
-    width:200px;max-width:100%;height:auto;border:1px solid #c8ccd1;background:#eee;
-  }
-  .infobox .ib-caption{font-size:12px;color:#54595d;padding:0 10px 10px;text-align:center;}
-  /* TikTok card (stands in for the portrait) */
-  .tiktok-card{
-    display:block;text-decoration:none;color:#fff;
-    background:#010101;border-radius:8px;padding:16px 12px;text-align:center;
-  }
-  .tiktok-card:hover{opacity:.92;}
-  .tiktok-card .tt-top{display:flex;align-items:center;justify-content:center;gap:6px;font-weight:bold;font-size:15px;}
-  .tiktok-card .tt-handle{margin-top:8px;font-size:16px;font-weight:bold;color:#fff;}
-  .tiktok-card .tt-cta{margin-top:12px;display:inline-block;background:#fe2c55;color:#fff;border-radius:4px;padding:5px 14px;font-size:12px;font-weight:bold;}
-  .infobox table{width:100%;border-collapse:collapse;}
-  .infobox th{
-    text-align:left;vertical-align:top;
-    background:#eaecf0;padding:5px 8px;width:38%;
-    border-top:1px solid var(--border);
-  }
-  .infobox td{vertical-align:top;padding:5px 8px;border-top:1px solid var(--border);}
-  .infobox .ib-section{
-    text-align:center;font-weight:bold;background:#cedff2;
-    padding:4px;border-top:1px solid var(--border);
-  }
-
-  /* ---- Table of contents ---- */
-  .toc{
-    display:inline-block;
-    background:var(--soft);
-    border:1px solid #a2a9b1;
-    padding:8px 16px 10px;
-    margin:6px 0 16px;
-    font-size:13px;
-  }
-  .toc .toctitle{font-weight:bold;text-align:center;margin-bottom:4px;}
-  .toc ol{margin:0;padding-left:22px;}
-  .toc ol ol{padding-left:18px;}
-  .toc li{margin:2px 0;}
-
-  /* ---- References ---- */
-  .references{font-size:13px;padding-left:24px;}
-  .references li{margin-bottom:4px;}
-
-  /* ---- Categories ---- */
-  .catlinks{
-    border:1px solid #c8ccd1;background:var(--soft);
-    padding:6px 10px;margin-top:28px;font-size:13px;
-  }
-
-  /* ---- Footer ---- */
-  .foot{
-    max-width:1000px;margin:14px auto 40px;
-    color:#54595d;font-size:12px;padding:0 24px;
-  }
-  @media(max-width:640px){
-    .infobox{float:none;width:100%;margin:0 0 16px;}
-    .topbar .search{display:none;}
-  }
+  :root { --bg:#f7f8fa; --fg:#1b1f24; --muted:#586069; --card:#fff; --line:#d8dde3; --accent:#0b3d6b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1319; --fg:#e6eaee; --muted:#9aa5b1; --card:#161d25; --line:#2a3440; --accent:#6fb1ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin: 36px 0 14px; }
+  .lead { color: var(--muted); margin: 0 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+  .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card p { margin: 4px 0; }
+  .tag { font-size: .8rem; color: var(--muted); }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 40px; }
 </style>
 </head>
 <body>
+<main>
+  <h1>Matin Darwish</h1>
+  <p class="lead">Leeds, UK · Year 13 · Maths, Physics, Computer Science</p>
+  <p>I design and build aircraft, electronics and software for small processors, and I test each one before I trust it. I am looking for an aerospace engineering degree apprenticeship starting in September 2027.</p>
+  <p><a href="https://github.com/Matinthereal">GitHub: Matinthereal</a></p>
 
-<!-- Top bar -->
-<div class="topbar">
-  <div class="globe">M</div>
-  <div class="wordmark"><b>MIKEPEDIA</b><br><span>The Free Encyclopedia</span></div>
-  <div class="search">Search…</div>
-</div>
+  <h2>Projects</h2>
 
-<div class="page">
-<div class="content">
-
-  <h1 class="firstHeading">Matin Darwish</h1>
-  <div class="tagline">From Mikepedia, the free encyclopedia</div>
-
-  <!-- ===================== INFOBOX ===================== -->
-  <aside class="infobox">
-    <div class="ib-title">Matin Darwish</div>
-    <div class="ib-photo">
-      <!-- Embedded TikTok video. To change it, swap both the URL and data-video-id below. -->
-      <blockquote class="tiktok-embed"
-        cite="https://www.tiktok.com/@matindarw/video/7643894637698108694"
-        data-video-id="7643894637698108694"
-        style="max-width:280px;min-width:200px;margin:0 auto;">
-        <section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@matindarw">@matindarw</a></section>
-      </blockquote>
-      <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
-    <div class="ib-caption">A video by Darwish on TikTok (@matindarw)</div>
-    <table>
-      <tr><th>Born</th><td>Matin Darwish<br>1 March<br>Leeds, England</td></tr>
-      <tr><th>Other&nbsp;names</th><td>@matindarw</td></tr>
-      <tr><th>Heritage</th><td>Kurdish (Sorani)</td></tr>
-      <tr><th>Nationality</th><td>British</td></tr>
-      <tr><th>Education</th><td>The Ruth Gorse Academy<br>Roundhay School (sixth form)</td></tr>
-      <tr><th>Occupation</th><td>Software engineer · Student · Founder</td></tr>
-      <tr><th>Known&nbsp;for</th><td>Founder of AutoFlow Leeds; engineering projects</td></tr>
-      <tr><td colspan="2" class="ib-section">Business &amp; work</td></tr>
-      <tr><th>Company</th><td>Darwish Enterprises<br>(brand: AutoFlow Leeds)</td></tr>
-      <tr><th>Projects</th><td>CalcOS, Aether IDE, Termia</td></tr>
-      <tr><th>Contact</th><td><a href="mailto:DarwishEnterprises@protonmail.com">DarwishEnterprises@protonmail.com</a></td></tr>
-      <tr><th>Website</th><td><a href="https://darwishenterprises.com">darwishenterprises.com</a></td></tr>
-    </table>
-  </aside>
-
-  <!-- ===================== LEAD ===================== -->
-  <p>
-    <b>Matin Darwish</b> (born 1 March) is a British software engineer, student
-    entrepreneur and content creator from <a href="#early-life">Leeds, England</a>, of Kurdish
-    (Sorani) heritage. At the age of 18 he founded the AI automation agency
-    <a href="#autoflow">AutoFlow Leeds</a>, which trades under his sole-trader business
-    <a href="#autoflow">Darwish Enterprises</a>. He is known for his software and hardware
-    engineering projects and for documenting his work as a UK A-level student "building in
-    public" on TikTok as <a href="#content">@matindarw</a>.
-  </p>
-  <p>
-    Darwish works as a software engineer across full-stack web, embedded systems and
-    artificial-intelligence development. His best-known projects include
-    <a href="#calcos">CalcOS</a>, an open-source graphing-calculator operating system, and
-    <a href="#aether">Aether IDE</a>, an AI-first desktop code editor. Alongside his studies he
-    is pursuing a career in aerospace engineering.
-  </p>
-
-  <!-- ===================== CONTENTS ===================== -->
-  <nav class="toc">
-    <div class="toctitle">Contents</div>
-    <ol>
-      <li><a href="#early-life">Early life and education</a></li>
-      <li><a href="#career">Career</a>
-        <ol>
-          <li><a href="#autoflow">AutoFlow Leeds and Darwish Enterprises</a></li>
-        </ol>
-      </li>
-      <li><a href="#projects">Notable projects</a>
-        <ol>
-          <li><a href="#calcos">CalcOS</a></li>
-          <li><a href="#aether">Aether IDE</a></li>
-          <li><a href="#termia">Termia</a></li>
-          <li><a href="#other">Other projects</a></li>
-        </ol>
-      </li>
-      <li><a href="#content">Content creation</a></li>
-      <li><a href="#personal">Personal life</a></li>
-      <li><a href="#references">References</a></li>
-      <li><a href="#external">External links</a></li>
-    </ol>
-  </nav>
-
-  <!-- ===================== SECTIONS ===================== -->
-  <h2 id="early-life">Early life and education <span class="edit">[edit]</span></h2>
-  <p>
-    Matin Darwish was born on 1 March in Leeds, England, into a family of Kurdish (Sorani)
-    heritage, and grew up in the city.<sup>[1]</sup> He attended The Ruth Gorse Academy in Leeds
-    before continuing to sixth form at Roundhay School, where he studied A-levels in Physics,
-    Mathematics and Computer Science.
-  </p>
-  <p>
-    Darwish has set his sights on a career in aerospace engineering, researching degree
-    apprenticeships with companies including Airbus, BAE Systems, Rolls-Royce and GE Aerospace.
-  </p>
-
-  <h2 id="career">Career <span class="edit">[edit]</span></h2>
-  <p>
-    Darwish works as a software engineer, building across full-stack web, embedded systems and
-    artificial-intelligence applications, and describes his hands-on, AI-assisted approach to
-    development as "vibecoding". His primary development platform is the Fedora Linux operating
-    system.<sup>[2]</sup>
-  </p>
-
-  <h3 id="autoflow">AutoFlow Leeds and Darwish Enterprises</h3>
-  <p>
-    In May 2026, at the age of 18, Darwish founded <b>AutoFlow Leeds</b>, an AI automation agency
-    that builds custom workflow automations for small businesses in the Leeds area, such as
-    restaurants, salons, gyms and accountancies. The agency operates as a brand of
-    <b>Darwish Enterprises</b>, his registered sole-trader business.<sup>[3]</sup>
-  </p>
-  <p>
-    AutoFlow Leeds offers productised services — built in TypeScript or n8n and powered by the
-    Claude AI platform — on a fixed-price model, with a "code you own, no lock-in" approach and
-    fast delivery. Its public-facing site is <a href="https://autoflowleeds.co.uk">autoflowleeds.co.uk</a>.
-  </p>
-
-  <h2 id="projects">Notable projects <span class="edit">[edit]</span></h2>
-
-  <h3 id="calcos">CalcOS</h3>
-  <p>
-    <b>CalcOS</b> is an open-source graphing-calculator operating system that runs on the
-    ESP32-S3 microcontroller. Built around the LVGL graphics library, it includes a scientific
-    calculator, a 2D function grapher, matrix tools, an equation solver and an integrated AI
-    tutor powered by a remote large-language-model API. The project was developed as Darwish's
-    A-level Computer Science non-exam assessment.<sup>[4]</sup>
-  </p>
-
-  <h3 id="aether">Aether IDE</h3>
-  <p>
-    <b>Aether IDE</b> is an AI-first desktop integrated development environment built with
-    Tauri, Rust and React. It features a real terminal, deep AI integration and an autonomous
-    tool-using agent designed to assist developers directly inside the editor.
-  </p>
-
-  <h3 id="termia">Termia</h3>
-  <p>
-    <b>Termia</b> is a Termux-inspired shell environment for the NumWorks graphing calculator,
-    paired with a Rust bridge and a Tauri-based desktop companion, allowing more advanced
-    interaction with the device over USB.
-  </p>
-
-  <h3 id="other">Other projects</h3>
-  <ul>
-    <li><b>NexaCare</b> — an AI-powered WhatsApp receptionist designed for clinics.</li>
-    <li><b>ESP32-S3 travel router</b> — a compact custom networking device with NAT and custom DNS.</li>
-    <li><b>OpenJarvis</b> — contributor to the local-first AI agent framework, including work on NPU acceleration.</li>
-  </ul>
-
-  <h2 id="content">Content creation <span class="edit">[edit]</span></h2>
-  <p>
-    Darwish creates short-form video content on TikTok under the handle
-    <a href="https://www.tiktok.com/@matindarw">@matindarw</a>, where his work centres on the
-    theme of a UK A-level student "building in public" — sharing his engineering projects,
-    startup progress and study journey. He is also active on Instagram and produces Islamic
-    da'wah-style content using AI design tools.<sup>[1]</sup>
-  </p>
-
-  <h2 id="personal">Personal life <span class="edit">[edit]</span></h2>
-  <p>
-    Darwish lives in Leeds, England, and is Muslim. Outside of engineering, his interests
-    include fashion, gaming and Linux and open-source technology culture.
-  </p>
-
-  <h2 id="references">References <span class="edit">[edit]</span></h2>
-  <ol class="references">
-    <li id="ref1">"Matin Darwish (@matindarw)." <i>TikTok</i>. Retrieved 2026.</li>
-    <li id="ref2">GitHub profile, <i>Matinthereal</i>. Retrieved 2026.</li>
-    <li id="ref3">"AutoFlow Leeds." <i>autoflowleeds.co.uk</i>. Retrieved 2026.</li>
-    <li id="ref4">"CalcOS — graphing calculator OS for ESP32-S3." Project repository.</li>
-  </ol>
-
-  <h2 id="external">External links <span class="edit">[edit]</span></h2>
-  <ul>
-    <li><a href="https://darwishenterprises.com">Darwish Enterprises</a> (official site)</li>
-    <li><a href="https://autoflowleeds.co.uk">AutoFlow Leeds</a></li>
-    <li><a href="https://www.tiktok.com/@matindarw">TikTok — @matindarw</a></li>
-    <li><a href="https://github.com/Matinthereal">GitHub — Matinthereal</a></li>
-    <li><a href="https://www.instagram.com/matin--darwish">Instagram — @matin--darwish</a></li>
-    <li><a href="mailto:DarwishEnterprises@protonmail.com">Email — DarwishEnterprises@protonmail.com</a></li>
-  </ul>
-
-  <div class="catlinks">
-    <b>Categories</b>: Living people · People from Leeds · British software engineers ·
-    Kurdish people · English Muslims · British TikTokers · Student entrepreneurs
+  <div class="card">
+    <h3>Talon VTOL: 2.5 m tilt-rotor aircraft</h3>
+    <p class="tag">Design stage · CAD in Python · 2026</p>
+    <p>Designed from my own sketches: a 3D-printable tricopter with 30 printable parts. A sizing tool with 50 unit tests gives a take-off mass of 5.2 kg, a stall speed of 11.4 m/s and a hover thrust margin of 2.1 times. It is not built or flown yet. Printing and a hover test come next.</p>
   </div>
 
-</div>
-</div>
+  <div class="card">
+    <h3>CalcOS: a calculator on a custom circuit board</h3>
+    <p class="tag">ESP32-S3 · LVGL · PCB · 2026</p>
+    <p>A calculator with its own operating system. I measured the parts, designed the case and keys, and stopped the PCB order until every part's position was checked. The check found a mounting error that would have wired a power pin to ground. I fixed it first, and the assembled board works.</p>
+  </div>
 
-<div class="foot">
-  Mikepedia is a personal, encyclopedia-styled webpage created by and about Matin Darwish.
-  It is <b>not</b> affiliated with, endorsed by, or hosted on Wikipedia or the Wikimedia Foundation.
-</div>
+  <div class="card">
+    <h3>Chess and a 3D game for the NumWorks calculator</h3>
+    <p class="tag">C · ARM Cortex-M · 2026</p>
+    <p>A chess engine with 155 passing tests that I installed and played on the calculator, and a first-person block game that runs at 10 frames per second.</p>
+  </div>
 
+  <div class="card">
+    <h3><a href="https://github.com/Matinthereal/lumen-notes">Lumen</a>: handwritten notes app</h3>
+    <p class="tag">Qt 6 · C++ · GPL-3.0 · 2026</p>
+    <p>Pen, touch and keyboard notes with PDF annotation and flashcards. Public releases for Linux, Windows and Android.</p>
+  </div>
+
+  <div class="card">
+    <h3><a href="https://matinthereal.github.io/engineer-me/">Engineer Me</a> (<a href="https://github.com/Matinthereal/engineer-me">code</a>)</h3>
+    <p class="tag">JavaScript · Rolls-Royce Discover week · Oct 2026</p>
+    <p>A game for 9 to 13 year olds to try six types of engineer. My team's idea from the Rolls-Royce Future Makers Challenge, built by me and checked with automated tests.</p>
+  </div>
+
+  <div class="card">
+    <h3><a href="https://github.com/Matinthereal/termia">Termia</a></h3>
+    <p class="tag">NumWorks N0120 · Rust · 2026</p>
+    <p>A terminal-style shell for a graphing calculator, with a USB link to a desktop companion.</p>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Rolls-Royce Discover: Behind-the-Scenes</h3>
+    <p class="tag">Filton, Bristol · October 2026</p>
+    <p>A work experience week with engineers and apprentices, and a team challenge about getting young people interested in STEM careers.</p>
+  </div>
+  <div class="card">
+    <h3>University of York: Physics, Engineering and Technology work experience week</h3>
+    <p class="tag">2026</p>
+    <p>An individual A1 research poster on how the body's own electricity heals wounds.</p>
+  </div>
+
+  <h2>How I work</h2>
+  <p>I use AI coding tools and I say so. I set the requirements, test on real hardware and make the design decisions. When something fails, I change one thing at a time until I find the cause.</p>
+
+  <footer>Last updated October 2026.</footer>
+</main>
 </body>
 </html>

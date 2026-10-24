@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matindarwish.is-a.dev/sitemap.xml
+Sitemap: https://matinthereal.github.io/matindarwish-site/sitemap.xml
